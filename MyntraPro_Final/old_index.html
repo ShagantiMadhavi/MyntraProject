@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Myntra Home Page</title>
+
+<style>
+
+.grid {
+  display: grid;
+  
+  grid-gap: 10px;
+  aspect-ratio: 16 / 9;
+}
+
+.grid .left {
+  
+}
+
+.grid .upper_right {
+  grid-column: 2 / 2;
+  grid-row:    1 / 2;
+}
+
+.grid .lower_right {
+  grid-column: 2 / 2;
+  grid-row:    2 / 2;
+}
+
+.grid .item img {
+  width:  100%;
+  height: 100%;
+  
+}
+</style>
+    
+</head>
+<body>
+
+    <script src="https://kit.fontawesome.com/eed98d22c5.js" crossorigin="anonymous"></script>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html" “text-decoration: none” “text-decoration-color: red”><img src="myntra_logo.png" alt="Myntra Logo" width = "70px" height="50px"></a>
+        </div>
+        <ul class="nav-list">
+            
+            
+           <!--  <li><a href="men.html">MEN</a></li> 
+            <li><a href="women.html">WOMEN</a></li>
+            <li><a href="#">KIDS</a></li>
+            <li><a href="#">HOME & LIVING</a></li>
+            <li><a href="#">BEAUTY</a></li>
+            <li><a href="#">STUDIO</a></li>
+            -->
+     </ul>
+            <div class="dropdown"> 
+                
+                
+                <button class="dropbtn">MEN</button> 
+                <div class="dropdown-content">
+                  <a href="men.html">Indian & Festive Wear</a>
+                  <a href="#">Topwear</a>
+                  <a href="#">Footwear</a>
+                  <a href="#">Sunglasses & Frames</a>
+                  <a href="#">Watches</a>
+                  <a href="#">Sports & Archive Wear</a>
+                  <a href="#">Gadgets</a>
+                  <a href="#">Fashion Accessories</a>
+                  <a href="#">Bags & Back Packs</a>
+                  <a href="#">Luggages & Trolleys</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">WOMEN</button>
+                <div class="dropdown-content">
+                    <a href="women.html">Indian & Festive Wear</a>
+                    <a href="#">Topwear</a>
+                    <a href="#">Footwear</a>
+                    <a href="#">Sunglasses & Frames</a>
+                    <a href="#">Watches</a>
+                    <a href="#">Sports & Archive Wear</a>
+                    <a href="#">Gadgets</a>
+                    <a href="#">Fashion Accessories</a>
+                    <a href="#">Bags & Back Packs</a>
+                    <a href="#">Luggages & Trolleys</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">KIDS</button>
+                <div class="dropdown-content">
+                    <a href="option1.html">Indian & Festive Wear</a>
+                    <a href="#">Topwear</a>
+                    <a href="#">Footwear</a>
+                    <a href="#">Sunglasses & Frames</a>
+                    <a href="#">Watches</a>
+                    <a href="#">Sports & Archive Wear</a>
+                    <a href="#">Gadgets</a>
+                    <a href="#">Fashion Accessories</a>
+                    <a href="#">Bags & Back Packs</a>
+                    <a href="#">Luggages & Trolleys</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">HOME & LIVING</button>
+                <div class="dropdown-content">
+                    <a href="option1.html">Indian & Festive Wear</a>
+                    <a href="#">Topwear</a>
+                    <a href="#">Footwear</a>
+                    <a href="#">Sunglasses & Frames</a>
+                    <a href="#">Watches</a>
+                    <a href="#">Sports & Archive Wear</a>
+                    <a href="#">Gadgets</a>
+                    <a href="#">Fashion Accessories</a>
+                    <a href="#">Bags & Back Packs</a>
+                    <a href="#">Luggages & Trolleys</a>
+                </div>
+              </div><div class="dropdown">
+                <button class="dropbtn">BEAUTY</button>
+                <div class="dropdown-content">
+                    <a href="option1.html">Indian & Festive Wear</a>
+                    <a href="#">Topwear</a>
+                    <a href="#">Footwear</a>
+                    <a href="#">Sunglasses & Frames</a>
+                    <a href="#">Watches</a>
+                    <a href="#">Sports & Archive Wear</a>
+                    <a href="#">Gadgets</a>
+                    <a href="#">Fashion Accessories</a>
+                    <a href="#">Bags & Back Packs</a>
+                    <a href="#">Luggages & Trolleys</a>
+                </div>
+              </div><div class="dropdown">
+                <button class="dropbtn">STUDIO</button>
+                <div class="dropdown-content">
+                    <a href="men.html">Indian & Festive Wear</a>
+                    <a href="#">Topwear</a>
+                    <a href="#">Footwear</a>
+                    <a href="#">Sunglasses & Frames</a>
+                    <a href="#">Watches</a>
+                    <a href="#">Sports & Archive Wear</a>
+                    <a href="#">Gadgets</a>
+                    <a href="#">Fashion Accessories</a>
+                    <a href="#">Bags & Back Packs</a>
+                    <a href="#">Luggages & Trolleys</a>
+                </div>
+              </div>
+           
+            
+
+            <div class="search-bar">
+
+                <form class="inline">
+                    <div class="input-icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="input-field" type="text" placeholder="Search for products, brands and more">
+                        
+                    </div>
+              </form>
+
+            </div>
+			
+			<div class="dropdown">
+                <button class="dropbtn"> <li class="fa-regular fa-user"></li>
+                </button>
+                <div class="dropdown-content">
+                    <h4>Welcome</h4><br>
+                    <p>To access account and manage orders</p>
+                    <button class="dropbtn">LOGIN/SIGNUP</button>                 
+                     <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+            </div><div class="dropdown">
+                
+                <button class="dropbtn"><li class="fa-regular fa-heart"></li>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+
+            </div><div class="dropdown">
+                <button class="dropbtn"> <li class="fa-solid fa-bag-shopping"></li>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+                
+              
+                
+               
+                </ul> 
+            </ul>   
+                </div>
+                
+            </header>
+
+    
+
+
+
+  <!--   <section class="main-banner">
+        
+        <img src="./deepika2.webp" alt="Banner Image">
+    </section>
+
+    <section class="product-section">
+        <h2>Featured Products</h2>
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+       Repeat similar product cards for other featured products 
+    </section>
+
+     More sections for different categories or promotions -->
+
+
+
+
+    
+
+
+<!-- 
+     <div class="poster1">
+        <img src="flatposter.png" height = "200px" width="1600px">
+     </div> -->
+
+     
+     <div class="grid">
+         <div class="slider-frame">
+            <div class="slide-images">
+
+                    <div class="item left">
+            
+                        <img src="fam1.jpg">
+                     </div>
+                 
+
+
+                    <div class="item upper_right">
+                        <h1> title</h1>
+                    </div>
+                    <div class="item lower_right">
+                        <h1>Offers</h1>
+                     </div>
+                </div>
+                </div>
+</div>
+<!--
+     <div class="slider-frame">
+        <div class="slide-images">
+
+            
+                <div class="img-container">
+                    <img src="srkfamily3.jpg">
+
+                </div>
+                <div class="img-container">
+                    <img src="sonamfamily3.jpg">
+                </div>
+                <div class="img-container">
+                    <img src="ambanifamily2.jpg">
+                </div>
+        </div>
+    </div>
+
+-->
+
+
+
+
+
+
+
+
+    <section class="product-section">
+       <p> <h1>SHOP BY Category</h1>  </p>
+
+
+    <main>
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+        <a href="men.html"> </a>
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+       <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+
+        <section class="album">
+            <img src="alia1.jpg" alt="Album 1">
+            <p>Frocks</p>
+            <h2>40-80% OFF</h2>
+            
+            <p>Shop Now</p>
+           
+        </section>
+		</main>
+
+    </section>
+
+   
+
+    <section class="product-section">
+        <h2>Featured Products</h2>
+        <div class="product-card">
+            <img src="alia3.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+
+        <div class="product-card">
+            <img src="alia3.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+
+        <div class="product-card">
+            <img src="alia3.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+
+        <div class="product-card">
+            <img src="alia3.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+
+        <div class="product-card">
+            <img src="alia3.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+
+        <div class="product-card">
+            <img src="alia3.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+
+        <div class="product-card">
+            <img src="alia3.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+
+        <div class="product-card">
+            <img src="alia3.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+
+        <div class="product-card">
+            <img src="alia3.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+        <div class="product-card">
+            <img src="alia3.jpg" alt="Product 1">
+            <h3>Product Name 1</h3>
+            <p>Price: $50</p>
+        </div>
+      
+    </section>
+
+     More sections for different categories or promotions 
+
+
+    <footer>
+        <p>&copy; 2023 Myntra. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+
